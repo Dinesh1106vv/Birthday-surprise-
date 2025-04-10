@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Do you love me?</h1>
+        <p>Try clicking 'No' if you can!</p>
+        <a href='question2.html'><button id='yes-btn'>Yes</button></a>
+        <button id="no-btn">No</button>
+    </div>
+    <script>
+        const noBtn = document.getElementById('no-btn');
+        noBtn.addEventListener('mouseover', () => {
+            noBtn.style.position = 'absolute';
+            noBtn.style.left = Math.random() * window.innerWidth + 'px';
+            noBtn.style.top = Math.random() * window.innerHeight + 'px';
+        });
+        </script>
+</body>
+</html>
